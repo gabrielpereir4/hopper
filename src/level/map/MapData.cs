@@ -28,6 +28,6 @@ public class MapData
 		if (!IsInside(pos)) return false;
 
 		TileType tile = _tiles[pos.X, pos.Y];
-		return tile == TileType.Floor || tile == TileType.Start || tile == TileType.Exit;
+		return tile == TileType.Transposable || tile == TileType.Spawn || tile == TileType.Goal;
 	}
 }
